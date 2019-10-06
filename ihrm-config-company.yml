@@ -2,7 +2,6 @@
 spring:
   profiles:
     active: dev # 激活开发环境配置
----------------------------------------------------------------------------------------------------
 server:
   port: 5002
 #spring配置
@@ -25,14 +24,12 @@ spring:
   redis:
     host: 127.0.0.1
     port: 6379
-
 eureka:
   client:
     registerWithEureka: true # 服务注册开关
     fetchRegistry: true # 服务发现开关
     serviceUrl: # 注册到哪一个Eureka Server服务注册中心，多个中间用逗号分隔
       defaultZone: http://localhost:7001/eureka
----------------------------------------------------------------------------------------------------
 server:
   port: 5002
 #spring配置
@@ -55,7 +52,6 @@ spring:
   redis:
     host: 127.0.0.1
     port: 6379
-
 eureka:
   client:
     registerWithEureka: true # 服务注册开关
