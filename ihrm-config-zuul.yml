@@ -4,12 +4,10 @@ spring:
 ---
 server:
   port: 5001
-
 spring:
-  profiles:dev
+  profiles: dev
   application:
     name: ihrm-zuul-gateway
-
 eureka:
   client:
     registerWithEureka: true # 服务注册开关
@@ -22,7 +20,6 @@ eureka:
   instance:
     instanceId: ${spring.application.name}:${server.port} # 指定实例ID,就不会显示主机名了
     preferIpAddress: true     #访问路径可以显示IP地址
-
 zuul:
   routes:
     provider-system:    # 路由名称，名称任意，路由名称唯一
@@ -39,12 +36,10 @@ zuul:
  ---
 server:
   port: 5001
-
 spring:
-  profiles:prod
+  profiles: prod
   application:
     name: ihrm-zuul-gateway
-
 eureka:
   client:
     registerWithEureka: true # 服务注册开关
@@ -57,7 +52,6 @@ eureka:
   instance:
     instanceId: ${spring.application.name}:${server.port} # 指定实例ID,就不会显示主机名了
     preferIpAddress: true     #访问路径可以显示IP地址
-
 zuul:
   routes:
     provider-system:    # 路由名称，名称任意，路由名称唯一
