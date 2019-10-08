@@ -32,7 +32,7 @@ zuul:
       serviceId: ihrm-company
       stripPrefix: false
   sensitive-headers: '*'  #保证网关中的sessionId 和 后端微服务一致 不过滤任何信息
- ---
+---
 server:
   port: 5001
 spring:
