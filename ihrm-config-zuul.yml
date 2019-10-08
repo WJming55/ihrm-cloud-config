@@ -6,6 +6,7 @@ server:
   port: 5001
 
 spring:
+  profiles:dev
   application:
     name: ihrm-zuul-gateway
 
@@ -40,6 +41,7 @@ server:
   port: 5001
 
 spring:
+  profiles:prod
   application:
     name: ihrm-zuul-gateway
 
